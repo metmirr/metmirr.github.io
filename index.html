@@ -2,12 +2,13 @@
 layout: default
 title: Home
 ---
-
+<hr>
 <p>Merhaba, bu sitede birbirinden farklı teknolojiler hakkında yazılar ve eğitimler göreceksin. Zamanın varken bunlardan faydalanmaya bak :)</p>
 <p>Her bir buton seni bir dizi eğitimin olduğu sayfaya yönlendirecektir. Sorularını ve görüşlerini bana herzaman bildirebilirsin.</p>
 <p></p>
-{% for item in site.data.categories %}
-	<a class="btn btn-primary" href="{{ item.link | relative_url }}">
-			{{ item.name }}
+
+{% for category in site.categories %}
+	<a class="btn btn-primary" href="{{ category.url }}">
+			{{ category.name }}
 		</a>
 {% endfor %}
