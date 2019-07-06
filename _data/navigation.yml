@@ -1,6 +1,4 @@
-- name: Anasayfa
+- name: Programlama
   link: /
 - name: Hakkımda
   link: /about.html
-- name: Blog
-  link: /blog.html

@@ -2,7 +2,3 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
-collections:
-  categories:
-    output: true

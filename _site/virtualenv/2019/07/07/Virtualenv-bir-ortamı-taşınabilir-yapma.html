@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Virtualenv bir ortamı taşınabilir yapma</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Virtualenv bir ortamı taşınabilir yapma</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Virtualenv bir ortamı taşınabilir yapma" />
+<meta name="author" content="metin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Virtualenv ile normal olarak oluşturulan bir oram başka bir yere taşındığında çalışmayacaktır. Bunun için --relocatable seçeneği kullanılmalıdır." />
+<meta property="og:description" content="Virtualenv ile normal olarak oluşturulan bir oram başka bir yere taşındığında çalışmayacaktır. Bunun için --relocatable seçeneği kullanılmalıdır." />
+<link rel="canonical" href="http://localhost:4000/virtualenv/2019/07/07/Virtualenv-bir-ortam%C4%B1-ta%C5%9F%C4%B1nabilir-yapma.html" />
+<meta property="og:url" content="http://localhost:4000/virtualenv/2019/07/07/Virtualenv-bir-ortam%C4%B1-ta%C5%9F%C4%B1nabilir-yapma.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-07-07T00:00:00+03:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Virtualenv bir ortamı taşınabilir yapma","url":"http://localhost:4000/virtualenv/2019/07/07/Virtualenv-bir-ortam%C4%B1-ta%C5%9F%C4%B1nabilir-yapma.html","dateModified":"2019-07-07T00:00:00+03:00","datePublished":"2019-07-07T00:00:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/virtualenv/2019/07/07/Virtualenv-bir-ortam%C4%B1-ta%C5%9F%C4%B1nabilir-yapma.html"},"author":{"@type":"Person","name":"metin"},"description":"Virtualenv ile normal olarak oluşturulan bir oram başka bir yere taşındığında çalışmayacaktır. Bunun için --relocatable seçeneği kullanılmalıdır.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+  	<div class="container">
+      <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+    <a class="navbar-brand" href="/">met&#183mirr</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample09">
+      <ul class="navbar-nav mr-auto">
+      	
+
+	        <li class="nav-item active">
+	          <a class="nav-link" href="/" >
+			Programlama
+		</a>
+	        </li>
+        
+
+	        <li class="nav-item active">
+	          <a class="nav-link" href="/about.html" >
+			Hakkımda
+		</a>
+	        </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+      <h1>Virtualenv bir ortamı taşınabilir yapma</h1>
+
+<p>
+  07 Jul 2019
+  
+  
+</p>
+
+<p>Virtualenv ile normal olarak oluşturulan bir oram başka bir yere taşındığında çalışmayacaktır. Bunun için <code class="highlighter-rouge">--relocatable</code> seçeneği kullanılmalıdır.</p>
+
+<p>Ancak bazı sorunlar çözülmemekle beraber hala devam etmektedir. Bunun için tavsiye edilen projeniz için belli bir yerde karar vermeniz ve orada geliştirme süresince kalmanızdır.</p>
+
+<p>Daha önce oluşturduğunuz bir ortama taşınabilir özelliği kazandırmak için:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ virtualenv --relocatable myvenv
+</code></pre></div></div>
+
+<p>komutu ile ortamınız taşınabilir olacaktır.</p>
+
+
+    </div>
+  </body>
+</html>

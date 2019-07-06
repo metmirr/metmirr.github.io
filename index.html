@@ -1,14 +1,35 @@
 ---
 layout: default
-title: Home
+title: Programlama
 ---
-<hr>
-<p>Merhaba, bu sitede birbirinden farklı teknolojiler hakkında yazılar ve eğitimler göreceksin. Zamanın varken bunlardan faydalanmaya bak :)</p>
-<p>Her bir buton seni bir dizi eğitimin olduğu sayfaya yönlendirecektir. Sorularını ve görüşlerini bana herzaman bildirebilirsin.</p>
+
+<hr />
+<p>
+  Merhaba, bu sitede birbirinden farklı teknolojiler hakkında yazılar ve
+  eğitimler göreceksin. Zamanın varken bunlardan faydalanmaya bak :)
+</p>
+<p>
+  Her bir buton seni bir dizi eğitimin olduğu sayfaya yönlendirecektir.
+  Sorularını ve görüşlerini bana herzaman bildirebilirsin.
+</p>
 <p></p>
 
-{% for category in site.categories %}
-	<a class="btn btn-primary" href="{{ category.url }}">
-			{{ category.name }}
-		</a>
-{% endfor %}
+<div>
+  {% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    <p></p>
+
+    <h3 class="category-head">{{ category_name }}</h3>
+    <a name="{{ category_name | slugize }}"></a>
+    {% for post in site.categories[category_name] %}
+    <article class="archive-item">
+      <h4>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h4>
+    </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>

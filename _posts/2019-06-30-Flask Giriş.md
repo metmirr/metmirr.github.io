@@ -1,0 +1,25 @@
+---
+layout: post
+author: metin
+categories: Flask
+---
+
+Flask 1 Nisan 2010 yılında _Armin Ronacher_ tarafından ilk kez yayınlandı.
+
+Varsayılan olarak jinja2 template motoru ile gelmektedir. Jinja2 python için genel amaçlı bir template motorudur.
+
+Flask güvenlik için werkzeug kütüphanesini kullanır. Flask ile varsayılan olarak gelir ve güvenlik işlemleri için oldukça iyi bir araçtır.
+
+Flask ile istediğiniz veritabanını kullanabilirsiniz ve hatta kendi oluşturduğunuz veri depolama sisteminizi bile kullanabilirsiniz. Çünkü flask varsayılan olarak herhangi bir veritabanı ile gelmez. Bu da geliştiricilere büyük bir esneklik sunmaktadır. Flask, Pinterest ve Linkedln tarafından kullanılmaktadır.
+
+Flask 50'yi geçen bir eklenti sayısına sahiptir. Bu eklentiler ile birçok işlem gerçekleştirilebilir. Örneğin kullanıcı giriş-çıkış işlemleri için _Flask-Login_, Bootstrap için _Flask-Bootstrap_ eklentileri mevcuttur.
+
+Flask'ı pip aracılığıyla kullanmak için:
+
+```bash
+$ pip install flask
+```
+
+yazmanız yeterlidir, pip için [pip kullanımı](http://www.mtndmr.com/egitim/pip) adresini kontrol edebilirsiniz. Pip, Python paketlerini kullanmak için vazgeçilmez bir araçtır.
+
+**Bu site `Flask` kullanılarak geliştirilmiştir.**
