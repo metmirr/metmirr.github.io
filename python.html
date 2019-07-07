@@ -1,0 +1,15 @@
+---
+layout: default
+title: Python
+---
+
+<h1>Python</h1>
+<p>Python dinamik, nesne tabanlı bir programlama dilidir.</p>
+
+{% for post in site.categories["Python"] %}
+<article class="archive-item">
+  <h4>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+  </h4>
+</article>
+{% endfor %}

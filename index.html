@@ -3,7 +3,9 @@ layout: default
 title: Programlama
 ---
 
-<hr />
+&nbsp;
+&nbsp;
+&nbsp;
 <p>
   Merhaba, bu sitede birbirinden farklı teknolojiler hakkında yazılar ve
   eğitimler göreceksin. Zamanın varken bunlardan faydalanmaya bak :)
@@ -12,9 +14,19 @@ title: Programlama
   Her bir buton seni bir dizi eğitimin olduğu sayfaya yönlendirecektir.
   Sorularını ve görüşlerini bana herzaman bildirebilirsin.
 </p>
-<p></p>
+&nbsp;
+&nbsp;
+&nbsp;
 
 <div>
+  {% for item in site.data.subnav %}
+	<a class="btn btn-warning btn-lg" href="{{ item.link | relative_url }}" {% if page.url == item.link %}class="current"{% endif %}>
+		{{ item.name }}
+	</a>
+{% endfor %}
+</div>
+
+<!-- <div>
   {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -32,4 +44,4 @@ title: Programlama
     {% endfor %}
   </div>
   {% endfor %}
-</div>
+</div> -->
