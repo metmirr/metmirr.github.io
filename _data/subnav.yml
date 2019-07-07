@@ -2,3 +2,11 @@
   link: /flask.html
 - name: Python
   link: /python.html
+- name: Pip
+  link: /pip.html
+- name: Github
+  link: /github.html
+- name: Virtualenv
+  link: /virtualenv.html
+- name: Django
+  link: /django.html
