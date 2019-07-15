@@ -6,7 +6,7 @@ title: Flask
 <h2>{{ page.title }}</h2>
 <p>Flask, Python için geliştirilmiş olan bir web frameworktur.</p>
 
-{% for post in site.categories[page.title] %}
+{% for post in site.categories[page.title] reversed %}
 <article class="archive-item">
   <h4>
     <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
