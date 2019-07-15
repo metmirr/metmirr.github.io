@@ -1,5 +1,5 @@
 
-highlighter: pygments
+highlighter: rogue
 
 plugins:
   - jekyll-feed
