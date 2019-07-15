@@ -1,5 +1,5 @@
 
-highlighter: rogue
+highlighter: rouge
 
 plugins:
   - jekyll-feed
