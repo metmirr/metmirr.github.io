@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: metmirr.github.io
+Token: f5ff13a8bf18a0ca17d6b4abd13c08639c373d240e6295c05fe024f285e41023
